@@ -32,7 +32,7 @@
     color: #29D6A2;
 }
 
-.main{
+.main-bg-img{
     background:
             linear-gradient(179.98deg, rgba(62, 48, 48, 0.921875) 0.02%, rgba(147, 185, 231, 0) 274.36%),
             image("mermaid.png");
