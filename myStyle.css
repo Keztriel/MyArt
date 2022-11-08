@@ -1,0 +1,42 @@
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    font-size: 1.2em;
+    /*text-align: center;*/
+    position: fixed;
+    width: 100%;
+    background: #15202B;
+    height: 3em;
+
+}
+
+.header-menu-element {
+    flex: 25%;
+
+    font-family: 'Glory';
+    font-style: normal;
+    padding: 1em 0.5em 1em;
+}
+
+.header-menu-element-explore {
+    color: #2F91F7;
+}
+.header-menu-element-gallery{
+    color: #29ABD6;
+}
+.header-menu-element-jobs{
+    color: #39EDEA;
+}
+.header-menu-element-events{
+    color: #29D6A2;
+}
+
+.main{
+    background:
+            linear-gradient(179.98deg, rgba(62, 48, 48, 0.921875) 0.02%, rgba(147, 185, 231, 0) 274.36%),
+            image("mermaid.png");
+    background-blend-mode: multiply, normal;
+
+}
+
