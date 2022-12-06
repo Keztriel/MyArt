@@ -1,40 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
+
 .header-menu {
+
+    width: 100%;
+    height: 100px;
+    background-color: #15202B;
+}
+
+.header-menu-left {
     display: flex;
     flex-direction: row;
-    align-content: flex-start;
-    font-size: 1.2em;
-    /*text-align: center;*/
-    position: fixed;
-    width: 100%;
-    background: #15202B;
-    height: 3em;
+    /*justify-content: space-between;*/
+    align-items: center;
+    gap: 1%;
+    /*width: 40%;*/
+    height: 100%;
+}
 
+.header-menu-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .header-menu-element {
-    flex: 25%;
-
-    font-family: 'Glory';
+    font-family: 'Glory', sans-serif;
     font-style: normal;
-    padding: 1em 0.5em 1em;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1em;
+    padding: 0px 33px 0px 38px;
+
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
 }
 
 .header-menu-element-explore {
     color: #2F91F7;
 }
-.header-menu-element-gallery{
+
+.header-menu-element-gallery {
     color: #29ABD6;
 }
-.header-menu-element-jobs{
+
+.header-menu-element-jobs {
     color: #39EDEA;
 }
-.header-menu-element-events{
+
+.header-menu-element-events {
     color: #29D6A2;
+}
+
+.header-menu-item-icon {
+    min-width: 55px;
+    min-height: 55px;
+}
+
+.header-menu-element-logo {
+    min-width: 116px;
+    height: 68px;
+    background-image: url("Logo.svg");
+}
+
+.header-menu-element-explore-icon {
+    background-image: url("icon-explore.svg");
+}
+.header-menu-element-gallery-icon{
+    background-image: url("icon-gallery.svg");
+}
+.header-menu-element-jobs-icon{
+    background-image: url("icon-jobs.svg");
+}
+.header-menu-element-events-icon{
+    background-image: url("icon-events.svg");
 }
 
 .main-bg-img{
     background:
-            linear-gradient(179.98deg, rgba(62, 48, 48, 0.921875) 0.02%, rgba(147, 185, 231, 0) 274.36%),
+            linear-gradient(180deg, rgba(62, 48, 48, 0.921875) 0.02%, rgba(147, 185, 231, 0) 274.36%),
             image("mermaid.png");
     background-blend-mode: multiply, normal;
 
