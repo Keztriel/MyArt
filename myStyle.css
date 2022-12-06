@@ -30,14 +30,14 @@
     font-weight: 400;
     font-size: 2em;
     line-height: 1em;
-    padding: 0px 33px 0px 38px;
+    padding: 0px 15px 0px 15px;
 
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
 }
-
 .header-menu-element-explore {
+
     color: #2F91F7;
 }
 
@@ -77,11 +77,70 @@
     background-image: url("icon-events.svg");
 }
 
+@media screen and (max-width: 1200px) {
+    .header-menu-element-explore{
+        display: none;
+    }
+    .header-menu-element-events{
+        display: none;
+    }
+    .header-menu-element-jobs{
+        display: none;
+    }
+    .header-menu-element-gallery{
+        display: none;
+    }
+    .header-menu-element {
+        font-family: 'Glory', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1em;
+        padding: 0px 3px 0px 3px;
+
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+    }
+
+    .main-bg-img{
+        overflow-x: visible;
+        width: fit-content;
+        height: fit-content;
+    }
+
+}
+
 .main-bg-img{
-    background:
-            linear-gradient(180deg, rgba(62, 48, 48, 0.921875) 0.02%, rgba(147, 185, 231, 0) 274.36%),
-            image("mermaid.png");
+    width: 100%;
+    height: 2000px;
+
+    background: linear-gradient(180deg, rgba(26, 30, 68, 0.921875) 0%, rgba(147, 185, 231, 0) 99.99%, rgba(177, 212, 253, 0) 99.99%), url("adventure.png");
     background-blend-mode: multiply, normal;
+
+
+    .profile{
+        display:flex;
+    }
+
+    .profile-info {
+        display: flex;
+        width: 35%;
+        height: 100%;
+        /*position: fixed;*/
+    }
+
+    .profile-posts {
+        display: flex;
+        width: available;
+    }
+
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+        margin: 10px;
+        background: url("profile-pic.png");
+    }
 
 }
 
