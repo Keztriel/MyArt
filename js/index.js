@@ -1,3 +1,5 @@
+let allPosts =JSON.parse(localStorage.getItem("posts"));
+
 window.onload = function () {
     //--------time load
     let time = performance.timing;
@@ -11,8 +13,6 @@ window.onload = function () {
     //------------ time load
     //-----add post
    //localStorage.setItem("posts", JSON.stringify([]));
-
-    let allPosts =JSON.parse(localStorage.getItem("posts"));
 
     renderPost = (post) =>{
         let wall = document.getElementById("wall");
@@ -39,21 +39,23 @@ window.onload = function () {
 
     }
 
+    if ( allPosts == null){
+        let posts =[];
+        localStorage.setItem("posts", JSON.stringify(posts));
+    }else{
+        if(allPosts.length > 0 )
+            allPosts.map( post =>{
+                renderPost(post);
+            })
+    }
+
     addPost = ( post ) =>{
         renderPost(post);
         allPosts.push(post);
         localStorage.setItem("posts", JSON.stringify(allPosts));
 
     }
-    if ( allPosts == null){
-        let posts =[];
-        localStorage.setItem("posts", JSON.stringify(posts));
-    }else{
-        if(allPosts.length > 0 )
-        allPosts.map( post =>{
-            renderPost(post);
-        })
-    }
+
     document.getElementById("btn-add-post").onclick = function () {
         console.log("post")
         let form = document.getElementById("form");
@@ -72,6 +74,8 @@ document.getElementById("add-post").onclick = () =>{
         let description = document.getElementById("description-input").value; //input
 
     addPost({"title": title, "imgUrl": imgUrl, "description": description});
+    let form = document.getElementById("form");
+    form.classList.remove("form-constructor-active")
 }
 
 
