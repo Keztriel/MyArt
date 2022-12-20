@@ -47,7 +47,7 @@ window.onload = function () {
     }
     if ( allPosts == null){
         let posts =[];
-        localStorage.setItem("posts", JSON.stringify(post));
+        localStorage.setItem("posts", JSON.stringify(posts));
     }else{
         if(allPosts.length > 0 )
         allPosts.map( post =>{
