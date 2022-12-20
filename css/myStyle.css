@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
+
+:root{
+    --wc-count: 3;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Glory', sans-serif;
+    background-color: #15202B;
+}
+
+.header-menu {
+
+    width: 100%;
+    height: 100px;
+    background-color: #15202B;
+}
+
+.header-menu-left {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    align-items: center;
+    gap: 1%;
+    /*width: 40%;*/
+    height: 100%;
+}
+
+.header-menu-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-menu-element {
+    font-family: 'Glory', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1em;
+    padding: 0 15px 0 15px;
+
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.header-menu-element-explore {
+
+    color: #2F91F7;
+}
+
+.header-menu-element-gallery {
+    color: #29ABD6;
+}
+
+.header-menu-element-jobs {
+    color: #39EDEA;
+}
+
+.header-menu-element-events {
+    color: #29D6A2;
+}
+
+.header-menu-item-icon {
+    min-width: 55px;
+    min-height: 55px;
+}
+
+.header-menu-element-logo {
+    min-width: 116px;
+    margin-left: 5px;
+    height: 70px;
+    background-image: url("Logo.svg");
+    background-repeat: no-repeat;
+}
+
+.header-menu-element-explore-icon {
+    background-image: url("icon-explore.svg");
+}
+.header-menu-element-gallery-icon{
+    background-image: url("icon-gallery.svg");
+}
+.header-menu-element-jobs-icon{
+    background-image: url("icon-jobs.svg");
+}
+.header-menu-element-events-icon{
+    background-image: url("icon-events.svg");
+}
+
+@media screen and (max-width: 1200px) {
+    .header-menu-element-explore{
+        display: none;
+    }
+    .header-menu-element-events{
+        display: none;
+    }
+    .header-menu-element-jobs{
+        display: none;
+    }
+    .header-menu-element-gallery{
+        display: none;
+    }
+    .header-menu-element {
+        font-family: 'Glory', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1em;
+        padding: 0 3px 0 3px;
+
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+    }
+
+    .main-bg-img{
+        overflow-x: visible;
+        width: fit-content;
+        height: fit-content;
+    }
+
+}
+
+.main-bg-img {
+    width: 100%;
+    height: 2000px;
+
+    background: linear-gradient(180deg, rgba(2, 3, 6, 1) 0%, rgba(17, 21, 25, 0.5) 99.99%), url("adventure.png");
+    background-blend-mode: multiply, normal;
+}
+
+    .profile{
+        display:flex;
+    }
+
+    .profile-info {
+        display: flex;
+        width: 35%;
+        height: 100%;
+        /*position: fixed;*/
+    }
+
+    .profile-posts {
+        display: flex;
+        width: available;
+    }
+
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+        margin: 10px;
+        background: url("../profile-pic.png");
+    }
+
+    .wall {
+
+    }
+
+    .wall-item{
+        display: flex;
+        margin: 0 3% 10px 3%;
+        transition: all 200ms;
+    }
+
+    .wall-item:hover {
+        transform: scale(103%);
+        transition: all 200ms;
+
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .wall-item > h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3em;
+        line-height: 1em;
+        color: white;
+
+        bottom: 2%;
+        left: 5%;
+        position: absolute;
+        display: none;
+    }
+    .wall-item:hover > h2 {
+        display: block;
+    }
+
+    .wall-item > img {
+        width: 100%;
+        border-radius: 34px;
+    }
+
+    .wall-item:hover > img {
+        position: relative;
+        background: linear-gradient(180.34deg, rgba(0, 0, 0, 0) 0.3%, rgba(11, 26, 39, 0.2) 49.8%);
+    }
+
+    .wall-column {
+        display: block;
+        width: calc(100% / var(--wc-count));
+        float: left;
+        position: relative;
+        box-sizing: border-box;
+    }
