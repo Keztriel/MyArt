@@ -8,21 +8,19 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <title>Profile</title>
-    <script src="../js/index.js"></script>
 </head>
 <body>
 <header class="header">
-    <nav class="nav container ">
+    <nav class="nav">
         <ul class="menu-list">
             <li class="menu-item logo">
+                <p>MY</p>
                 <a href="../index.html">
-                <img src="../img/Logo.svg" alt="logo">
+                    <img src="../img/logo.svg" alt="logo">
                 </a>
+                <p>ART</p>
             </li>
             <li class="menu-item text-color-azure">
-                <a href="#">
-
-                </a>
                 <img src="../img/icon-explore.svg" alt="explore">
                 <p>Explore</p>
             </li>
@@ -40,8 +38,8 @@
             </li>
         </ul>
         <div class="menu-profile">
-            <button class="btn-add-post"><img src="../img/icon-add-post.svg" alt="add-post"></button>
-            <button class="btn-profile" >
+            <button class="btn-add-post" id="btn-add-post"><img src="../img/icon-add-post.svg" alt="add-post"></button>
+            <button class="btn-profile">
                 <a href="#">
                     <img src="../img/icon-profile.svg" alt="profile">
                 </a>
@@ -50,7 +48,45 @@
     </nav>
 </header>
 <main>
+    <div>
+        <section class="pf-head">
+            <div class="pf-head-avatar">
+                <img src="../img/profile-pic.png" alt="pf-pic">
+            </div>
+            <div class="pf-head-content">
+                <h2 class="pf-head-name">Random Elf</h2>
+                <p class="pf-head-description">This is profile template</p>
+            </div>
+        </section>
+        <hr>
+        <section class="pf-description">
+            <div class="pf-biography">
+                <h2>About</h2>
+                <p>Young enthusiastic designer</p>
+                <p>
+                    Highly responsable and reliable with architectural education, creative approach and effective time management. Experienced in working with clients from all parts of the world, deeply concerned into workflow, always attentive to the details and technical requirements.
+                </p>
+            </div>
+            <div class="pf-contacts">
+                <h2>Social</h2>
+                <ul>
+                    <li>
+                        <a href="mailto:keztri@gmail.com">
+                            <img src="../img/Gmail_icon.svg.png" alt="">
+                            <span>keztri@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/art_skyden">
+                            <img src="../img/telegram.svg" alt="">
+                            <span>Keztriel</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
+    </div>
 </main>
 </body>
 </html>
