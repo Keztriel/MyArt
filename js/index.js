@@ -105,7 +105,7 @@ window.onload = function () {
         localStorage.setItem("posts", JSON.stringify(allPosts));
 
     }
-
+    
     document.getElementById("btn-add-post").onclick = function () {
         console.log("post")
         let form = document.getElementById("form");
